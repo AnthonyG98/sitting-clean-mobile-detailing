@@ -1,0 +1,545 @@
+@font-face {
+  font-family: 'octuple_maxregular';
+  src: url('./fonts/octuple-max-demo-webfont.woff2') format('woff2'),
+       url('./fonts/octuple-max-demo-webfont.woff') format('woff'),
+       url('./fonts/octuple-max-demo-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('./fonts/roboto-regular-webfont.woff') format('woff'),
+       url('./fonts/roboto-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'robotoregular';
+}
+.home-container {
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  background-color: black;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 15px;
+}
+.head-btn-container {
+  display: none;
+}
+.mobnav-container {
+  display: none;
+}
+.home-logo-container{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  letter-spacing: 3px;
+}
+.title-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: 'octuple_maxregular';
+  line-height: 0;
+  margin-left: 2%;
+}
+.title-head-two {
+  font-size: 1.5vw;
+}
+.logo {
+  width: 25%;
+  height: fit-content;
+}
+.links-container {
+  width: 30%;
+  max-width: 30%;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.link {
+  cursor: pointer;
+}
+#contact {
+  background-color: rgb(0, 204, 255);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+#contact:hover {
+  background-color: rgba(233, 17, 17, 0.692);
+}
+.mh-container {
+  display: none;
+}
+.parallax-container {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 5.5%;
+  position: relative;
+  display: block;
+}
+.parallax-img-container {
+  width: 100%;
+  position: relative;
+}
+.parallax-img {
+  width: 100%;
+  height:auto;
+  display: flex;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallax-text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.parallax-text {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ background-color: rgba(0, 0, 0, 0.384);
+}
+.abt-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ background-color: rgba(0, 0, 0, 0.384);
+}
+.contact-button {
+  width: 25%;
+  max-width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-size: 2.5vw;
+  color: white;
+  background-color: rgba(0, 204, 255, 0.781);
+  text-decoration: none;
+  text-align: center;
+}
+.contact-button:hover {
+  cursor: pointer;
+  background-color: rgba(233, 17, 17, 0.692);
+}
+.contact:hover {
+  cursor: pointer;
+  background-color: rgba(233, 17, 17, 0.692);
+}
+.message:hover, .link:hover {
+  cursor: pointer;
+  color: rgb(233, 17, 17);
+}
+.pricing-container {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.mob-pack-one {
+  display: none;
+}
+.pack-head {
+  color: rgb(233, 17, 17);
+  text-align: center;
+  font-family: 'octuple_maxregular';
+  font-size: 2vw;
+}
+.pack-list {
+  list-style: none;
+  line-height: 3vw;
+}
+.pack-price {
+  color: rgb(233, 17, 17);
+  font-size: 2vw;
+  text-align: right;
+}
+.select {
+  width: 55%;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 2vw;
+  font-family: 'robotoregular';
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.gallery-container {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  text-align: center;
+}
+.bubbles-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+@keyframes bubbles {
+  100% {
+    top: 0;
+  }
+}
+#bubble-one {
+  position: absolute;
+  width: 55px;
+  top: 300px;
+  left: 0;
+  z-index: -1;
+  animation: bubbles 15s ease;
+  animation-iteration-count: infinite;
+}
+#bubble-two {
+  position: absolute;
+  width: 35px;
+  top: 300px;
+  left: 150px;
+  z-index: -1;
+  animation: bubbles 15s ease;
+  transform: rotate(90deg);
+  animation-iteration-count: infinite;
+}
+#bubble-three {
+  position: absolute;
+  width: 55px;
+  top: 390px;
+  left: 88px;
+  z-index: -1;
+  animation: bubbles 15s ease;
+  transform: rotate(170deg);
+  animation-iteration-count: infinite;
+}
+#bubble-four {
+  position: absolute;
+  width: 55px;
+  top: 270px;
+  left: 25px;
+  z-index: -1;
+  animation: bubbles 15s ease;
+  animation-iteration-count: infinite;
+  transform: rotate(10deg);
+}
+#bubble-five {
+  position: absolute;
+  width: 65px;
+  top: 250px;
+  left: 200px;
+  z-index: -1;
+  animation: bubbles 15s ease;
+  transform: rotate(270deg);
+  animation-iteration-count: infinite;
+}
+.sitting-clean {
+  font-family: 'octuple_maxregular';
+  font-size: 3vw;
+}
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.mob-gallery-container {
+  display: none;
+}
+.contact {
+  font-size: 2vw;
+  padding: 15px;
+  color: white;
+  background-color: rgba(0, 204, 255, 0.781);
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+.message {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5vw;
+  text-decoration: underline;
+}
+.gal-img-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gal-img {
+  width: 80%;
+}
+.dots-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center !important;
+  align-content: center;
+  z-index: 999;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
+  font-size: 65px;
+  color: white;
+  opacity: 0;
+  transition: 1s ease;
+}
+.dots-container:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+.arrow-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.37);
+  position: absolute;
+}
+.fa-chevron-left {
+  z-index: 999;
+  cursor: pointer;
+}
+.fa-chevron-right {
+  z-index: 999;
+  cursor: pointer;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.103);
+  cursor: pointer;
+}
+.contact-container {
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  color: white;
+  font-size: 2vw;
+
+}
+.select-pack {
+  height: 2.5vw;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 2vw;
+}
+option {
+  background-color: black;
+}
+.or {
+  line-height: 0;
+}
+input {
+  width: 80%;
+  height: 2vw;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-bottom: 3%;
+  color: white;
+  z-index: 999;
+}
+#phone {
+  width: 60%;
+  height: 2vw;
+}
+input[type=date]{
+  color: white;
+}
+.center-submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#submit {
+  width: 20%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'robotoregular';
+  font-size: 2vw;
+  cursor: pointer;
+}
+#submit:hover {
+  border: 2px solid rgb(233, 17, 17);
+  color: rgb(233, 17, 17);
+}
+.test {
+  font-size: 12px;
+  color: red;
+}
+.follow-container {
+  width: 100%;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.fa-instagram {
+  font-size: 4vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-instagram:hover {
+  color: rgb(233, 17, 17);
+}
+.about-container {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: 'robotoregular';
+  font-size: 2vw;
+}
+.abt-img-container {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+.abt-img{
+  width: 100%;
+  background: url("./images/sitting-clean-mobile-detaling-about-us.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  position: relative;
+}
+.abt-img-text {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.commitments {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.commit {
+  font-family: 'robotoregular';
+  font-weight: 550;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 2vw;
+}
+.fa-building, .fa-cog, .fa-car-side {
+  color: rgb(233, 17, 17);
+  font-size: 4vw;
+}
+.icon-text {
+  display: inline;
+  font-size: 2vw;
+  font-family: 'robotoregular';
+  margin-left: 5%;
+}
+.abt-text-container {
+  width: 50%;
+  height: auto;
+  z-index: 99;
+  color: white;
+}
+.abt-text{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  color: white;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  margin-top: 5%;
+}
+.fa-copyright{
+  margin-right: 10px;
+}
+.slide {
+  margin-right: auto;
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  width: 70%;
+  height: auto;
+  opacity: 1;
+  transition-duration: 1s;
+}

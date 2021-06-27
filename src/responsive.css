@@ -1,0 +1,359 @@
+@media only screen and (max-width: 615px) {
+    @font-face {
+        font-family: 'octuple_maxregular';
+        src: url('./fonts/octuple-max-demo-webfont.woff2') format('woff2'),
+             url('./fonts/octuple-max-demo-webfont.woff') format('woff'),
+             url('./fonts/octuple-max-demo-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      
+      }
+      @font-face {
+        font-family: 'robotoregular';
+        src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+             url('./fonts/roboto-regular-webfont.woff') format('woff'),
+             url('./fonts/roboto-regular-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      
+      }
+      
+      body {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        font-family: 'robotoregular';
+      }
+      .home-container {
+        display: none;
+      }
+      .mobnav-container {
+          width: auto;
+          max-width: 100%;
+          height: auto;
+          color: white;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .parallax-container {
+        display: none;
+      }
+      .mh-container {
+        display: block;
+      }
+      .mv-logo-container {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          margin-left: 3%;
+      }
+      .mv-logo {
+          width: 110px;
+          height: fit-content;
+          margin-top: 3%;
+          margin-right: auto;
+      }
+      .mv-head-container {
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        font-family: 'octuple_maxregular';
+        line-height: 0;
+        margin-top: 3%;
+      }
+      .mv-head {
+        font-size: 6.5vw;
+      }
+      .mv-head-two {
+        font-size: 5vw;
+
+      }
+      .mv-link-container {
+        width: 45px;
+        height: 45px;
+        margin-right: 3%;
+        
+      }
+      .bars-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .bar {
+        width: 45px;
+        height: 5px;
+        background-color: white;
+      }
+      .mh-container {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin-top: 5%;
+      }
+      .mh-img-container {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .mh-img {
+        width: 100%;
+      }
+      .mh-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.384);
+      }
+      .mh-text-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 3vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+      }
+      .mh-button {
+        width: 55%;
+        max-width: 55%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        font-size: 6vw;
+        color: white;
+        background-color: rgba(0, 204, 255, 0.781);
+      }
+      .head-btn-container {
+        width: auto;
+        max-width: 70%;
+        height: auto;
+        display: block;
+        background-color: rgb(0, 204, 255);
+        font-size: 25px;
+      }
+      .head-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        font-family: 'robotoregular';
+        font-weight: bold;
+      }
+      .fa-phone {
+        transform: rotate(90deg);
+        margin-left: 5%;
+      }
+      .pricing-container {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pack-list {
+        list-style: none;
+        line-height: 6vw;
+        font-size: 4vw;
+      }
+      .pack-head {
+        color: rgb(233, 17, 17);
+        text-align: center;
+        font-family: 'octuple_maxregular';
+        font-size: 4.5vw;
+      }
+      .pack-price {
+        color: rgb(233, 17, 17);
+        font-size: 4.5vw;
+        text-align: right;
+      }
+      .select {
+        width: 55%;
+        border: 1px solid rgb(233, 17, 17);
+        color: rgb(233, 17, 17);
+        background-color: transparent;
+        font-size: 4.5vw;
+        font-family: 'robotoregular';
+        margin-bottom: 3%;
+        cursor: pointer;
+      }
+      .mob-gallery-container {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        text-align: center;
+        font-size: 4.5vw;
+      }
+      .gallery-container {
+        display: none;
+      }
+      .sitting-clean {
+        font-family: 'octuple_maxregular';
+        font-size: 7.5vw;
+      }
+      .contact {
+        font-size: 6.5vw;
+        padding: 15px;
+        color: white;
+        background-color: rgba(0, 204, 255, 0.781);
+        border: none;
+      }
+      .message {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 6.5vw;
+        text-decoration: underline;
+      }
+      .gal-img-container {
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .gall-img{
+        width: auto;
+        max-width: 90%;
+        height: auto;
+      }
+      .dots-container {
+        position: relative;
+        width: 20%;
+        height: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 999;
+        margin-top: 5px;
+      }
+      .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.103);
+        cursor: pointer;
+      }
+      .bubbles-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      } 
+      .contact-container {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        color: white;
+        font-size: 5.5vw;
+      }
+      .or {
+        line-height: 0;
+      }
+      input {
+        width: 76.25%;
+        height: 5.5vw;
+        background-color: transparent;
+        border: 1px solid white;
+        margin-bottom: 3%;
+        font-size: 5.5vw;
+      }
+      #phone {
+        width: 60%;
+      }
+      #submit {
+        width: 30%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-family: 'robotoregular';
+        font-size: 5.5vw;
+        cursor: pointer;
+      }
+      option {
+        background-color: black;
+        font-size: 5.5vw;
+      }
+      .follow-container {
+        width: 100%;
+        font-size: 3vw;
+        text-align: center;
+      }
+      .fa-instagram {
+        font-size: 8vw;
+        cursor: pointer;
+      }
+      .abt-img-container {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+      }
+      .abt-img-text {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-size: 4vw;
+      }
+      .commit {
+        font-family: 'robotoregular';
+        font-weight: 550;
+        letter-spacing: 2px;
+        color: white;
+        font-size: 5.5vw;
+      }
+      .fa-building, .fa-cog, .fa-car-side {
+        color: rgb(233, 17, 17);
+        font-size: 8vw;
+      }
+      .abt-text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 4vw;
+        color: white;
+      }
+  }
